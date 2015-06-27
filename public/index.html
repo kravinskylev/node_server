@@ -8,8 +8,10 @@
   <body ng-controller="mainController">
 
     <p>{{ hello }}</p>
+
     <input type="text" ng-model="textData" ng-change="logText(textData)">
-    <h1>{{ textData }}</h1>
+    <h1 ng-band="textData">{{ textData }}</h1>
+
     <button ng-click="alertMsg(textData)">Alert Message</button>
     <h1> Display Data </h1>
     <ol>
