@@ -13,11 +13,17 @@
     <h1 ng-band="textData">{{ textData }}</h1>
 
     <button ng-click="alertMsg(textData)">Alert Message</button>
+
     <h1> Display Data </h1>
     <ol>
       <li ng-repeat="datum in data">{{ datum }}</li>
     </ol>
-    <h1>{{ money | currency}}</h1>
+
+    <button ng-click="toggleMoney()">Show Money</button>
+    <div ng-show="showDiv">
+      <h1>{{ money | currency}}</h1>
+    </div>
+
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.js"></script> <script src="main.js"></script>
   </body>
 </html
